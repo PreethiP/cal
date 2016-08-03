@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>JF JS Login</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2011-2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (JomSocial Module) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF JS Login</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>JomSocial Login Module, Only For "JF Social" Joomla 2.5 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><div class="title">Module Features:</div><ul><li> JomSocial Beautiful Login Module; </li><li> Beautiful Notifications; </li><li> Show Name, Email, Account/Privacy, JomSocial Profile, Kunena Profile links; </li><li> Change Avatar In Module; </li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfjslogin.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_jfjslogin">mod_jfjslogin.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cache" type="hidden" default="0" label="Caching" description="Disable global caching." />
+				<field name="customCache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_avatar" type="list" default="1" label="Show avatar" description="Select whether to show the avatar.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_karma" type="list" default="1" label="Show karma" description="Select whether to show the karma.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_name" type="list" default="1" label="Show Name" description="Select whether to show the name in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_email" type="list" default="1" label="Show Email" description="Select whether to show the email in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_acc_pri_link" type="list" default="1" label="Show Account/Privacy Link" description="Select whether to show account and privacy link in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_profile_link" type="list" default="1" label="Show Profile Link" description="Select whether to show profile link in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_kunena_link" type="list" default="1" label="Show Kunena Link" description="Select whether to show Kunena link in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_logout_btn" type="list" default="1" label="Show Logout Button" description="Select whether to show logout button in popup.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_jfnotis" type="list" default="1" label="Show Notification Feature" description="Select whether to show Notification feature.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			</fieldset>
+			<fieldset addfieldpath="/modules/mod_jfjslogin/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="modules/mod_jfjslogin/admin/" />
+				<field type="about" name="about" path="modules/mod_jfjslogin/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

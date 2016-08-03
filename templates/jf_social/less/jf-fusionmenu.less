@@ -1,0 +1,181 @@
+/**
+* @version   $Id: jf-fusionmenu.less 3383 2012-09-20
+* @author    JoomForest http://www.joomforest.com
+* @copyright Copyright (C) 2011 - 2012 JoomForest.com
+* @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+**/
+ 
+// Root Items
+.menutop {
+	list-style: none;
+	margin: 10px 0 !important;
+	padding: 0;
+	line-height: 1em;
+	display: inline-block;
+	background: #F6F6F6;
+	border: 1px solid #ccc;
+	background-color: #F8F8F8;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#ECECEC));
+	background-image: -webkit-linear-gradient(top,#F8F8F8,#ECECEC);
+	background-image: -moz-linear-gradient(top,#F8F8F8,#ECECEC);
+	background-image: -ms-linear-gradient(top,#F8F8F8,#ECECEC);
+	background-image: -o-linear-gradient(top,#F8F8F8,#ECECEC);
+	background-image: linear-gradient(top,#F8F8F8,#ECECEC);
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	li {
+		border-right: 1px dashed gainsboro;
+	}
+	li.root {
+		float: left;
+		border-top: 4px solid transparent;
+		margin-top: -4px;
+		> .item {
+			white-space: nowrap;
+			display: block;
+			padding: 0;
+			font-size: 18px;
+			z-index: 100;
+			cursor: pointer;
+			position: relative;
+			margin: 0;
+			outline: none;
+			height: 2.1em;
+			text-transform: uppercase;
+			> span {
+				background: none !important;
+				box-shadow: none !important;
+				text-shadow: none;
+				color: #888;
+				line-height: 2.2em;
+				padding: 0 15px;
+			}
+			em {font-size: 10px;display: block;text-transform: lowercase;line-height: 0.3em;}
+			img {margin: 0 4px 0 0;vertical-align: text-bottom;}
+		}
+		> .item:hover {
+			background: #fff;
+			color: #000;
+		}
+		.subtext {
+				span {line-height: 1.9em;}
+		}
+	}
+	li.root.active {
+		border-top: 4px solid #4B93AD;
+		margin-top: -4px;
+		> .item {
+			background: #fff;
+			color: #000;
+			> span {
+				color: #000;
+			}
+		}
+		
+	}
+	li.root:hover {
+		border-top: 4px solid #4B93AD;
+		margin-top: -4px;
+		-webkit-transition: all .1s ease-in;
+		-moz-transition: all .1s ease-in;
+		-o-transition: all .1s ease-in;
+		-ms-transition: all .1s ease-in;
+		transition: all .1s ease-in;
+		> .item {
+			> span {
+				color: #000;
+			}
+		}
+	}
+	li.parent.root {
+		.item {
+			> span {padding: 0 25px 0 15px;line-height: 2.2em;}
+			.daddyicon {
+				background: url(../images/jf/menus/menutop-daddy.png) 90% 50% no-repeat;
+				padding: 0 25px 0 15px;
+				margin-top: -5px;right: 5px;
+			}
+			.daddyicon:before {content: none;}
+		}
+	}
+	li.active.root.f-mainparent-itemfocus > .item, li.root.f-mainparent-itemfocus > .item {
+		background: #fff;
+		
+	}
+	li.active.root.f-mainparent-itemfocus > .item span, li.root.f-mainparent-itemfocus > .item span {
+		color:#000;
+	}
+
+}
+/* submenu ----- */
+.menutop {
+	ul {margin: 0 -1px -1px 0;
+		li {border: none;border-bottom: 1px dashed gainsboro;
+			> .item {padding: 0 15px;height: auto;display: block;font-size: 1em;
+				span {display: block;width: 100%;overflow: hidden;line-height: 2em;}
+			}
+			> .item:hover {
+				background: white;
+				color: black;
+				-moz-box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+				-webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+				box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+				border: 5px solid #4B93AD;
+				border-left: 0;
+				border-top: 0;
+				border-bottom: 0;
+				-webkit-transition: all .1s ease-in;
+				-moz-transition: all .1s ease-in;
+				-o-transition: all .1s ease-in;
+				-ms-transition: all .1s ease-in;
+				transition: all .1s ease-in;
+			}
+			.item {font-size: 18px;text-shadow: none;color: #888;
+				img {float: left;margin: 8px 6px 0 0;vertical-align: top;}
+			}
+			.nolink {
+				span {display: block;}
+			}
+			.subtext {
+				span {line-height: 1.9em;}
+				em {line-height: 0.6em;padding-bottom: 7px;text-transform: lowercase;}
+			}
+			> .daddy {
+				span {background: url(../images/jf/menus/dropdown-daddy.png) 100% 50% no-repeat;}
+				span:before {display: none;}
+			}
+		}
+		li.parent {
+			> .item:hover {
+				border-right: 7px solid #4B93AD;
+			}
+		}
+		.grouped-parent {
+			> .daddy {
+				span:before {display: none;}
+			}
+		}
+	}
+	.drop-bot {height: 1px;overflow: hidden;clear: both;}
+	.fusion-submenu-wrapper {
+		background: #fff;
+		box-shadow: none;
+		border: 1px dashed gainsboro;
+		border-bottom: none;
+		width: 178px !important;
+		li.active a, li.parent.active {
+			border-right: 5px solid #4B93AD;
+		}
+	}
+
+	.fusion-js-subs {
+		padding-top: 0px !important;
+		padding-left: 8px !important;
+		margin-top: -1px;
+		.fusion-submenu-wrapper.level3, .fusion-submenu-wrapper.level4, .fusion-submenu-wrapper.level5, .fusion-submenu-wrapper.level6 {
+			margin: 0 0 0 -1px !important;
+		}
+	}
+}

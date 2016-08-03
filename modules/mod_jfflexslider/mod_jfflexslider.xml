@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>JF FlexSlider</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (Joomla Module) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF FlexSlider</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>Joomla FlexSlider v2.1, Only For "JF Social" Joomla 2.5 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><ul><li> This Module is base on "wooThemes" FlexSlider - <a href="http://flexslider.woothemes.com/" target="_blank">http://flexslider.woothemes.com/</a></li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+	<files>
+		<filename module="mod_jfflexslider">mod_jfflexslider.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfflexslider.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="jfFlexAnimSpd" type="text" default="8000" label="Animation Speed" description="Type Animation Speed between Slides (default is '8000' = 8 seconds)." />
+				<field name="jfFlexInImgAnimSpd" type="text" default="600" label="Inside Slider Speed" description="Type Images Animations Speed Inside Slider (default is '600')." />
+				<field name="jfFlexControlNav" type="list" default="true" label="Control Navigation" description="Choose Enable or to Disable Control Navigation.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexDirctNav" type="list" default="true" label="Direct Navigation" description="Choose Enable or to Disable Direct Navigation.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexPauseOnHov" type="list" default="true" label="Pause On Hover" description="Choose Enable or to Disable Pause On Hover.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexKeyboard" type="list" default="true" label="Keyboard Navigation" description="Choose Enable or to Disable Slider Navigating via Keyboard Left/Right Keys.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexMousewheel" type="list" default="false" label="Mousewheel Navigation" description="Choose Enable or to Disable Slider Navigating via Mousewheel">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexTouch" type="list" default="false" label="Touch Swipe Navigation" description="Choose Enable or to Disable touch swipe navigation of the slider on enabled devices">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexSlideDirect" type="list" default="horizontal" label="Slide Direction" description="Choose Slide Direction.">
+					<option value="horizontal">Horizontal</option>
+					<option value="vertical">Vertical</option>
+				</field>
+				<field name="jfFlexReverse" type="list" default="false" label="Reverse Direction" description="Choose Enable or to Disable Reverse The Animation Direction.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfFlexRandomize" type="list" default="false" label="Randomize Slide Order" description="Choose Enable or to Disable Randomize Slide Order, on load.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfflex_jquery_library" label="jQuery Library">
+				<field name="jfFlex_loadjquery" type="list" default="0" label="jQuery" description="If you dont use jQuery library on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jfFlex_loadjquery_noconflict" type="list" default="0" label="jQuery noConflict Mode" description="If you dont use jQuery 'noConflict' mode on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfflexslides" label="Slides (Needs Minimum 2 Slides)">
+				
+					<field name="jfflex_slide_1_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #1 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_1_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #1 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_1_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #1 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_1_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #1 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_1_title" type="text" default="" size="20" label="Slide #1 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_1_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #1 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_1_small_btn_text" type="text" default="" size="20" label="Slide #1 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_1_small_btn_link" type="text" default="" size="20" label="Slide #1 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_1_small_btn_target" type="list" default="_self" label="Slide #1 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_1_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #1 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_1_big_btn_text" type="text" default="" size="20" label="Slide #1 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_1_big_btn_link" type="text" default="" size="20" label="Slide #1 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_1_big_btn_target" type="list" default="_self" label="Slide #1 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_1_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #1 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_2_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #2 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_2_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #2 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_2_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #2 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_2_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #2 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_2_title" type="text" default="" size="20" label="Slide #2 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_2_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #2 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_2_small_btn_text" type="text" default="" size="20" label="Slide #2 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_2_small_btn_link" type="text" default="" size="20" label="Slide #2 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_2_small_btn_target" type="list" default="_self" label="Slide #2 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_2_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #2 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_2_big_btn_text" type="text" default="" size="20" label="Slide #2 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_2_big_btn_link" type="text" default="" size="20" label="Slide #2 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_2_big_btn_target" type="list" default="_self" label="Slide #2 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_2_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #2 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_3_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #3 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_3_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #3 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_3_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #3 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_3_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #3 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_3_title" type="text" default="" size="20" label="Slide #3 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_3_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #3 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_3_small_btn_text" type="text" default="" size="20" label="Slide #3 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_3_small_btn_link" type="text" default="" size="20" label="Slide #3 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_3_small_btn_target" type="list" default="_self" label="Slide #3 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_3_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #3 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_3_big_btn_text" type="text" default="" size="20" label="Slide #3 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_3_big_btn_link" type="text" default="" size="20" label="Slide #3 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_3_big_btn_target" type="list" default="_self" label="Slide #3 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_3_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #3 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_4_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #4 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_4_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #4 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_4_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #4 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_4_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #4 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_4_title" type="text" default="" size="20" label="Slide #4 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_4_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #4 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_4_small_btn_text" type="text" default="" size="20" label="Slide #4 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_4_small_btn_link" type="text" default="" size="20" label="Slide #4 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_4_small_btn_target" type="list" default="_self" label="Slide #4 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_4_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #4 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_4_big_btn_text" type="text" default="" size="20" label="Slide #4 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_4_big_btn_link" type="text" default="" size="20" label="Slide #4 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_4_big_btn_target" type="list" default="_self" label="Slide #4 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_4_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #4 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_5_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #5 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_5_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #5 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_5_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #5 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_5_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #5 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_5_title" type="text" default="" size="20" label="Slide #5 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_5_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #5 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_5_small_btn_text" type="text" default="" size="20" label="Slide #5 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_5_small_btn_link" type="text" default="" size="20" label="Slide #5 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_5_small_btn_target" type="list" default="_self" label="Slide #5 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_5_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #5 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_5_big_btn_text" type="text" default="" size="20" label="Slide #5 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_5_big_btn_link" type="text" default="" size="20" label="Slide #5 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_5_big_btn_target" type="list" default="_self" label="Slide #5 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_5_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #5 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_6_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #6 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_6_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #6 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_6_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #6 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_6_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #6 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_6_title" type="text" default="" size="20" label="Slide #6 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_6_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #6 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_6_small_btn_text" type="text" default="" size="20" label="Slide #6 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_6_small_btn_link" type="text" default="" size="20" label="Slide #6 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_6_small_btn_target" type="list" default="_self" label="Slide #6 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_6_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #6 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_6_big_btn_text" type="text" default="" size="20" label="Slide #6 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_6_big_btn_link" type="text" default="" size="20" label="Slide #6 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_6_big_btn_target" type="list" default="_self" label="Slide #6 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_6_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #6 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_7_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #7 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_7_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #7 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_7_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #7 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_7_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #7 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_7_title" type="text" default="" size="20" label="Slide #7 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_7_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #7 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_7_small_btn_text" type="text" default="" size="20" label="Slide #7 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_7_small_btn_link" type="text" default="" size="20" label="Slide #7 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_7_small_btn_target" type="list" default="_self" label="Slide #7 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_7_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #7 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_7_big_btn_text" type="text" default="" size="20" label="Slide #7 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_7_big_btn_link" type="text" default="" size="20" label="Slide #7 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_7_big_btn_target" type="list" default="_self" label="Slide #7 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_7_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #7 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_8_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #8 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_8_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #8 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_8_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #8 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_8_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #8 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_8_title" type="text" default="" size="20" label="Slide #8 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_8_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #8 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_8_small_btn_text" type="text" default="" size="20" label="Slide #8 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_8_small_btn_link" type="text" default="" size="20" label="Slide #8 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_8_small_btn_target" type="list" default="_self" label="Slide #8 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_8_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #8 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_8_big_btn_text" type="text" default="" size="20" label="Slide #8 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_8_big_btn_link" type="text" default="" size="20" label="Slide #8 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_8_big_btn_target" type="list" default="_self" label="Slide #8 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_8_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #8 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_9_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #9 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_9_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #9 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_9_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #9 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_9_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #9 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_9_title" type="text" default="" size="20" label="Slide #9 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_9_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #9 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_9_small_btn_text" type="text" default="" size="20" label="Slide #9 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_9_small_btn_link" type="text" default="" size="20" label="Slide #9 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_9_small_btn_target" type="list" default="_self" label="Slide #9 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_9_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #9 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_9_big_btn_text" type="text" default="" size="20" label="Slide #9 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_9_big_btn_link" type="text" default="" size="20" label="Slide #9 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_9_big_btn_target" type="list" default="_self" label="Slide #9 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_9_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #9 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfflex_slide_10_image_1" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #10 / 1-st Image" description="Choose 1-st Image."/>
+					<field name="jfflex_slide_10_image_2" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #10 / 2-nd Image" description="Choose 2-nd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_10_image_3" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #10 / 3-rd Image" description="Choose 3-rd Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_10_image_4" type="media" size="10" directory="jf/slideshows/flexslider" label="Slide #10 / 4-th Image" description="Choose 4-th Image (Dont choose if you dont want to show 2-nd image) (NOTE! make sure that you have chosen first image, if not, this slide won't be shown)."/>
+					<field name="jfflex_slide_10_title" type="text" default="" size="20" label="Slide #10 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfflex_slide_10_title_style" type="textarea" default="" rows="4" cols="25" label="Slide #10 / Title Style" description="Type Title CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_10_small_btn_text" type="text" default="" size="20" label="Slide #10 / Small Btn Text" description="Type Small Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_10_small_btn_link" type="text" default="" size="20" label="Slide #10 / Small Btn Link" description="Type Small Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_10_small_btn_target" type="list" default="_self" label="Slide #10 / Small Btn Target" description="Choose Small Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_10_small_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #10 / Small Button Style"  description="Type Small Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+					<field name="jfflex_slide_10_big_btn_text" type="text" default="" size="20" label="Slide #10 / Big Btn Text" description="Type Big Button Text (Leave it empty if you dont want to show this button)."/>
+					<field name="jfflex_slide_10_big_btn_link" type="text" default="" size="20" label="Slide #10 / Big Btn Link" description="Type Big Button Link (for example: https://www.google.com/)."/>
+					<field name="jfflex_slide_10_big_btn_target" type="list" default="_self" label="Slide #10 / Big Btn Target" description="Choose Big Button Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					<field name="jfflex_slide_10_big_btn_style" type="textarea" default="" rows="4" cols="25" label="Slide #10 / Big Button Style"  description="Type Big Button CSS Style, for example if you want to change its position: 'top:50px;bottom:auto;margin-left:200px;'"/>
+				
+				<field type="spacer" hr="true" />
+				
+			</fieldset>
+			
+			<fieldset name="advanced">
+			
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset addfieldpath="/modules/mod_jfflexslider/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="modules/mod_jfflexslider/admin/" />
+				<field type="about" name="about" path="modules/mod_jfflexslider/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

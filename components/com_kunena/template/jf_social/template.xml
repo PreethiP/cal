@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install>
+<kinstall type="kunena-template" version="2.0">
+	<name>JF Social</name>
+	<creationDate>08.02.13</creationDate>
+	<version>1.2</version>
+	<author>JoomForest.com</author>
+	<authorEmail>info@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com</authorUrl>
+	<copyright>JoomForest.com</copyright>
+	<license>GNU/GPL</license>
+	<description><![CDATA[<div id="jf-descr">JoomForest</div>]]></description>
+	<thumbnail>template_thumbnail.png</thumbnail>
+	<params addpath="/components/com_kunena/template/jf_social/admin">
+		<param type="jfparam" />
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-core'&gt;Kunena Core Features&lt;/div&gt;" />
+			
+			<param name="templatebyText" type="text" default="Template By" label="'Template By' Text" description="This is copyright text at bottom: 'Template By'" />
+			<param name="templatebyName" type="text" default="JoomForest" label="Template Author Name Text" description="This is template author name copyright text at bottom: 'JoomForest'" />
+			<param name="templatebyLink" class="long" type="text" default="http://www.joomforest.com" label="Template Author Link" description="This is template author copyright link at bottom: 'http://www.joomforest.com'" />
+			
+			<!-- Required avatar sizes -->
+			<param name="avatarSizeXThumb" type="text" default="36" label="Avatar Max Size-X Thumb" description="Set avatar maximum 'Size-X Thumb' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeYThumb" type="text" default="36" label="Avatar Max Size-Y Thumb" description="Set avatar maximum 'Size-Y Thumb' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeXWelcome" type="text" default="72" label="Avatar Max Size-X Welcome" description="Set avatar maximum 'Size-X Welcome' in pixels (Default is - 72). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeYWelcome" type="text" default="72" label="Avatar Max Size-Y Welcome" description="Set avatar maximum 'Size-Y Welcome' in pixels (Default is - 72). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeXList" type="text" default="36" label="Avatar Max Size-X List" description="Set avatar maximum 'Size-X List' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeYList" type="text" default="36" label="Avatar Max Size-Y List" description="Set avatar maximum 'Size-Y List' in pixels (Default is - 36). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeXPost" type="text" default="144" label="Avatar Max Size-X Post" description="Set avatar maximum 'Size-X Post' in pixels (Default is - 144). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeYPost" type="text" default="144" label="Avatar Max Size-Y Post" description="Set avatar maximum 'Size-Y Post' in pixels (Default is - 144). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeXProfile" type="text" default="200" label="Avatar Max Size-X Profile" description="Set avatar maximum 'Size-X Profile' in pixels (Default is - 200). NOTE! If you dont know what you are doing, dont change it." />
+			<param name="avatarSizeYProfile" type="text" default="200" label="Avatar Max Size-Y Profile" description="Set avatar maximum 'Size-Y Profile' in pixels (Default is - 200). NOTE! If you dont know what you are doing, dont change it." />
+			
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-main'&gt;JF Social - Main Features&lt;/div&gt;" />
+				<param name="jfkujQuery" type="list" default="0" label="jQuery Library" description="If you dont use jQuery library on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template and our 'JF Library' plugin, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkujQuerynoConflict" type="list" default="0" label="jQuery noConflict Mode" description="If you dont use jQuery 'noConflict' mode on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template and our 'JF Library' plugin, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkujQueryEasing" type="list" default="0" label="jQuery Easing Feature" description="If you dont use jQuery 'Easing' feature (http://gsgd.co.uk/sandbox/jquery/easing/) on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template and if you have enabled 'Easing' feature there, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkujQueryTipsy" type="list" default="0" label="jQuery Tipsy Tooltip" description="If you dont use jQuery 'Tipsy Tooltip' feature (http://onehackoranother.com/projects/jquery/tipsy/) on your website, than enable it. (NOTE! if you use our 'JF Social' Joomla template and if you have enabled 'Tipsy Tooltip' feature there, you don't need to enable it here.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkuGoogleWebFont" type="list" default="1" label="Google Web Font Library" description="Enable of not 'Google Font Library' on your website">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkuGoogleFontSheet" type="text" class="long" default="" label="Type Google Font Stylesheet" description="Type Google Font Stylesheet (Default is - '//fonts.googleapis.com/css?family=Yanone+Kaffeesatz'). For other fonts visit - http://www.google.com/webfonts (NOTE! - Leave it Empty if you dont want to add Google font StyleSheet)" />
+				<param name="jfkuGoogleFontFace" type="text" default="Yanone Kaffeesatz" label="Type Google Font Face" description="Type Google Font Face (Default is - Yanone Kaffeesatz). For other fonts visit - http://www.google.com/webfonts" />
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;JF Logo&lt;/span&gt;" />
+				<param name="jfku_JFlogo" type="list" default="1" label="JF Logo" description="Enable of not 'JF Logo' feature on your website at bottom">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfku_JFlogoLink" type="text" class="medium" default="http://www.joomforest.com" label="Type 'JF Logo' Link" description="Type 'JF Logo' Link (Default is - 'http://www.joomforest.com')" />
+				<param name="jfku_JFlogoTitle" type="text" class="medium" default="Designed by JoomForest.com" label="Type 'JF Logo' Title" description="Type 'JF Logo' Title (Default is - 'www.JoomForest.com')" />
+				
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-styles'&gt;JF Social - Styles&lt;/div&gt;" />
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Unlimited Colors Feature&lt;/span&gt;" />
+				<param name="jfku_UnlimColors" type="list" default="0" label="'Unlimited Colors' Feature" description="Enable of not 'Unlimited Colors' feature on your website (NOTE! - If you use our 'JF Social' Joomla Template, than dont enable it here, and use it in Joomla Template Manager. Also make sure if you have enabled 'Kunena Theme Color Override' There)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfku_UC_MainActive" type="text" class="jf_colorpicker" default="#2a7b99" label="Main Active Color" description="Choose Main Active Color (it contains all links, Menu Active Item color and so on...) | (Default is - '#2a7b99')"/>
+				<param name="jfku_UC_MainInactive" type="text" class="jf_colorpicker" default="#DD0000" label="Main Inactive Color" description="Choose Main Inactive Color (it contains for example, 'cancel' button color ...) | (Default is - '#DD0000')" />
+				<param name="jfku_UC_MobileT_gr_t" type="text" class="jf_colorpicker" default="#227FA3" label="Mobile Toolbar Gradient - Top" description="Choose Mobile Toolbar Top Gradient Color | (Default is - '#227FA3')" />
+				<param name="jfku_UC_MobileT_gr_b" type="text" class="jf_colorpicker" default="#194B5E" label="Mobile Toolbar Gradient - Bottom" description="Choose Mobile Toolbar Bottom Gradient Color | (Default is - '#194B5E')" />
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Font Size Changer Feature&lt;/span&gt;" />
+				<param name="jfku_FontSize" type="list" default="0" label="'Font Size Changer' Feature" description="Enable of not 'Font Size Changer' feature on your website">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfku_FS_Menu" type="text" default="" label="Menu Font Size" description="Type Menu Font Size (Default is - '18px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Cat_H" type="text" default="" label="Category Header Font Size" description="Type Category Header Font Size (Default is - '22px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_SideBar_M_T" type="text" default="" label="SideBar Modules Title Font Size" description="Type SideBar Modules Title Font Size (Default is - '18px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_H_Search" type="text" default="" label="Header Search Font Size" description="Type Header Search Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_K_Login" type="text" default="" label="Kunena Login Font Size" description="Type Kunena Login Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				
+				<param name="jfku_FS_K_Login_L" type="text" default="" label="Kunena Login 'Logout' Font Size" description="Type Kunena Login 'Logout' Font Size (Default is - '15px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_JF_Popup_H" type="text" default="" label="JF Popup Header Title Font Size" description="Type JF Popup Header Title Font Size (Default is - '22px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Tipsy" type="text" default="" label="Tipsy Tooltip Font Size" description="Type Tipsy Tooltip Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Topic_Status" type="text" default="" label="Topic Status Font Size" description="Type Topic Status Font Size (Default is - '14px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Select_Tag" type="text" default="" label="Select Tag Font Size" description="Type Select Tag Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				
+				<param name="jfku_FS_Select_Tag_L" type="text" default="" label="Select Tag LetterSpacing Font Size" description="Type Select Tag LetterSpacing Font Size (Default is - '1px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Input_Btn" type="text" default="" label="Input Button Font Size" description="Type Input Button Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_K_Jump_Btn" type="text" default="" label="Kunena Jump button Font Size" description="Type Kunena Jump button Font Size (Default is - '18px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Profile_Btns" type="text" default="" label="Profile Buttons Font Size" description="Type Profile Buttons Font Size (Default is - '18px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Profile_Edit" type="text" default="" label="Profile Edit Button Font Size" description="Type Profile Edit Button Font Size (Default is - '23px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				
+				<param name="jfku_FS_Mob_T_Big_Txt" type="text" default="" label="Mobile Toolbar Big Text Font Size" description="Type Mobile Toolbar Big Text Font Size (Default is - '24px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Mob_T_Small_T" type="text" default="" label="Mobile Toolbar Small Text Font Size" description="Type Mobile Toolbar Small Text Font Size (Default is - '16px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Mob_T_Btns" type="text" default="" label="Mobile Toolbar Buttons Font Size" description="Type Mobile Toolbar Buttons Font Size (Default is - '25px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				<param name="jfku_FS_Mob_T_Menu" type="text" default="" label="Mobile Toolbar Menu Font Size" description="Type Mobile Toolbar Menu Font Size (Default is - '24px') | (NOTE! - Leave it Empty if you dont want to use)"/>
+				
+				
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-sidebar'&gt;JF Social - SideBar&lt;/div&gt;" />
+			<param name="jfkuSideBar" type="list" default="1" label="SideBar Module Position" description="Enable/Disable Sidebar Module Position">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			<param name="jfkuSideBarStatus" type="list" default="1" label="SideBar Module Position: Status" description="Make Opened or Closed SideBar on first Startup">
+				<option value="1">Opened</option>
+				<option value="0">Closed</option>
+			</param>
+			<param name="jfkuSideBarToggleBtn" type="list" default="1" label="SideBar Module Position: Toggle (Button)" description="Enable/Disable SideBar Module Position Toggle (Button)">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			<param name="jfkuSideBarToggleMod" type="list" default="1" label="SideBar Module Position: Toggle Modules" description="Enable/Disable SideBar Module Position Toggle Modules">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			<param name="jfkuSideBarToggleStatus" type="list" default="1" label="SideBar Module Position: Toggle Modules - Status" description="Make Opened or Closed SideBar Module Position Modules">
+				<option value="1">Opened</option>
+				<option value="0">Closed</option>
+			</param>
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-header'&gt;JF Social - Header Features&lt;/div&gt;" />
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Sticky Header&lt;/span&gt;" />
+			<param name="jfkuStickyHeader" type="list" default="1" label="Sticky Header Feature" description="Enable/Disable Sticky Header Feature">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Quick Navigation&lt;/span&gt;" />
+				<param name="jfkuQuickNavPos" type="list" default="1" label="QuickNavigation Module Position - 'jf_kunena_quicknav'" description="Enable/Disable QuickNavigation Module Position - 'jf_kunena_quicknav'">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+				<param name="jfkuQ_N_ModalMinH" type="text" default="350px" label="Modal Minimum Height" description="Type QuickNavigation Modal Minimum Height (Default is - '350px')" />
+				<param name="jfkuQ_N_ModalMaxH" type="text" default="350px" label="Modal Maximum Height" description="Type QuickNavigation Modal Maximum Height (Default is - '350px')" />
+				<param name="jfkuQ_N_ModalMenuSubH" type="text" default="145%" label="Modal Menu SubItems Minimum Height" description="Type QuickNavigation Modal Menu SubItems Minimum Height (Default is - '145%')" />
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Kunena Login&lt;/span&gt;" />
+				<param name="jfkuLoginPos" type="list" default="1" label="Kunena Login Module Position - 'jf_kunena_login'" description="Enable/Disable Kunena Login Module Position - 'jf_kunena_login'">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Kunena Annoucements&lt;/span&gt;" />
+				<param name="jfkuAnnouncements" type="list" default="1" label="Kunena Annoucements Button" description="Enable/Disable Kunena Annoucements Button (NOTE! - This button is shown only for Moderators)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+			<param type="spacer" default="&lt;span class='jf-sub-title'&gt;Kunena Search&lt;/span&gt;" />
+				<param name="jfkuSearchPos" type="list" default="1" label="Kunena Search Module Position - 'jf_kunena_search'" description="Enable/Disable Kunena Search Module Position - 'jf_kunena_search'">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</param>
+		<param type="spacer" default="&lt;div class='jf-js-adminside-param-title ku-mobile'&gt;JF Social - Mobile&lt;/div&gt;" />
+			<param name="jfkuMobileToolbar" type="list" default="1" label="Kunena Mobile Toolbar" description="Enable/Disable Kunena Mobile Toolbar">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			
+	</params>
+</kinstall>

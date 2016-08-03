@@ -1,0 +1,363 @@
+/* 
+
+Used Colors:
+
+#E21818 -
+#FF3838 - 
+#FA2020 - 
+#FD2E2E - 
+#CF0000 - 
+
+*/
+
+
+/* ===========_______________________________ START COLOR: PART 1 - #02A067" ________________________________________=========== */
+
+#jf-js-latest-photos-button, 
+#jf-tinycarousel .buttons:hover, 
+.es-nav span:hover,
+#jf_portfolio_filter li.current a, 
+#jf_portfolio_filter li:hover a, 
+#jf_portfolio_filter li.current a,
+#jf_portfolio_filter li:hover a,
+.jf_typo_accord.style4 .jf_typo_accord_trigger, 
+.jf_typo_toggle.style4 .jf_typo_toggle_trigger,
+#community-wrap .js_dropDownParent li a:hover, 
+#cWindowContentWrap .js_dropDownParent li a:hover, 
+#community-wrap .js_PrivacyOpen .js_dropDownMaster .js_dropDown {
+	background-color: #02A067;
+}
+.jf-showcase-mod .jf-showcase-mod-btn:hover,
+.jf-recent-projects:hover .jf-recent-projects-title .jf-recent-projects-title-l, 
+.jf-recent-projects:hover .jf-recent-projects-title .jf-recent-projects-title-r,
+.jf-our-friends:hover .jf-our-friends-title .jf-our-friends-title-l, 
+.jf-our-friends:hover .jf-our-friends-title .jf-our-friends-title-r,
+#jf-login .jf-login-content .jf-login-authorization-button:hover, 
+.component-content .item-page .pagenav li,
+.button:hover, 
+.readon:hover, 
+.readmore:hover, 
+button.validate:hover, 
+#member-profile a:hover, 
+#member-registration a:hover, 
+.formelm-buttons button:hover, 
+.btn-primary:hover,
+.button, 
+.readon, 
+.readmore, 
+button.validate, 
+#member-profile a, 
+#member-registration a, 
+.formelm-buttons button, 
+.btn-primary,
+.button:active, 
+.readon:active, 
+.readmore:active, 
+button.validate:active, 
+#member-profile a:active, 
+#member-registration a:active, 
+.formelm-buttons button:active, 
+.btn-primary:active,
+.jf_typo_simple_tabs.style4 ul.tabs li.active a, 
+table.jf_typo_table.style3 thead tr th, 
+table.jf_typo_table.style4 thead tr th,
+div.jf-k2-ItemReadMore a, 
+div.k2TagCloudBlock a:hover, 
+div.k2LoginBlock fieldset.input input.button, 
+div.k2LoginBlock fieldset.input input.button:hover,
+.nspArt .readon, 
+.nspArt .readon:hover, 
+.nspArt .readon:active, 
+div.subCategory .subCategoryMore:hover, 
+.jf-k2-TagsBlock a:hover,
+.itemComments:hover .jf-k2-comment-separator, 
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+.itemComments:hover .jf-k2-comment-separator, 
+div.itemCommentsForm form input#submitCommentButton, 
+div.itemBackToTop a:hover,
+.component-content .pagination ul li a:hover {
+	background: #02A067;
+}
+#jf-logomodalcontent .jf-logomenu-title,
+#jf_circlecolor,
+#rt-breadcrumbs .breadcrumbs a,
+#rt-breadcrumbs .breadcrumbs a:hover,
+.jf_typo_simple_tabs ul.tabs li.active a,
+.jf_typo_accord_trigger,
+div.k2TagCloudBlock a,
+div.itemComments ul.itemCommentsList li span.commentLink a {
+    color: #02A067
+}
+div.itemAuthorLatest,
+div.itemRelated,
+.camera_caption > div,
+.jf_typo_title,
+#rt-showcase .rt-container .rt-grid-4:hover {
+    border-color: #02A067
+}
+.jf_typo_simple_tabs ul.tabs li.active,
+.jf_typo_simple_tabs.style2 ul.tabs li.active,
+.jf_typo_simple_tabs.style3 ul.tabs li.active {
+    border-top: 2px solid #02A067
+}
+.jf_typo_accord_trigger {
+    border-left: 2px solid #02A067
+}
+.jf_typo_toggle.style1 .jf_typo_toggle_trigger,
+.jf_typo_toggle.style1 .jf_typo_toggle_trigger:hover,
+.jf_typo_toggle.style2 .jf_typo_toggle_trigger,
+.jf_typo_toggle.style2 .jf_typo_toggle_trigger:hover,
+.jf_typo_toggle.style3 .jf_typo_toggle_trigger,
+.jf_typo_toggle.style3 .jf_typo_toggle_trigger:hover {
+    border-left: 3px solid #02A067
+}
+div.k2UserBlock form input.ubLogout,
+div.k2UserBlock form input.ubLogout:hover,
+div.k2UserBlock form input.ubLogout:active {
+    background: #02A067
+}
+
+/* ===========_______________________________ END COLOR: PART 1 - #02A067" ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 2 - #00CE83" ________________________________________=========== */
+.jf-portfolio-item .jf-portfolio-title-border {
+	background: #00CE83;
+}
+/* ===========_______________________________ END COLOR: PART 2 - #00CE83" ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 3 - #02A067" ________________________________________=========== */
+#jf-login .jf-login-content .jf-login-authorization-button {
+	background: #02A067;
+}
+/* ===========_______________________________ END COLOR: PART 3 - #02A067" ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 4 - #00CE83" ________________________________________=========== */
+.jf_typo_gallery li a .mask .mask-content .border {
+	background: #00CE83;
+}
+/* ===========_______________________________ END COLOR: PART 4 - #00CE83" ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 5 - #00CE83" ________________________________________=========== */
+.jf-blog-item-author .author a, 
+.jf-blog-item-category div.category a {
+	color: #00CE83;
+}
+.jf-blog-item-author a:hover, 
+.jf-blog-item-category div.category a:hover {
+	color: #00CE83;
+	text-shadow: 0 0 5px #00CE83;
+}
+.jf-portfolio-item-readmore a {
+	color: #00CE83;
+}
+.jf-portfolio-item-readmore a:hover {
+	color: #00CE83;
+	text-shadow: 0 0 5px #00CE83;
+}
+.jf-k2-item-author .catItemAuthor a, 
+.jf-k2-item-category div.jf-k2-catItemCategory a {
+	color: #00CE83;
+}
+.jf-k2-item-author a:hover {
+	color: #00CE83;
+	text-shadow: 0 0 5px #00CE83;
+}
+/* ===========_______________________________ END COLOR: PART 5 - #00CE83" ________________________________________=========== */
+
+
+/* ===========_______________________________ START COLOR: PART 6 - #00794D" ________________________________________=========== */
+.jf_typo_accord.style4 .jf_typo_accord_trigger:hover {
+	background-color: #00794D;
+}
+.jf_typo_toggle.style4 .jf_typo_toggle_trigger:hover {
+	background-color: #00794D;
+}
+/* ===========_______________________________ END COLOR: PART 6 - #00794D" ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 7 - #02A067" ________________________________________=========== */
+.menutop li.root.active,
+.menutop li.root:hover {
+    border-top: 4px solid #02A067
+}
+.menutop ul li.parent > .item:hover {
+    border-right: 7px solid #02A067
+}
+.menutop .fusion-submenu-wrapper li.active a,
+.menutop .fusion-submenu-wrapper li.parent.active {
+    border-right: 5px solid #02A067
+}
+.menutop ul li > .item:hover {
+    border-right: 5px solid #02A067
+}
+/* ===========_______________________________ END COLOR: PART 7 - #02A067" ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 8 - #02A067" ________________________________________=========== */
+.jf-recent-projects .jf-recent-projects-viewall a:hover {
+	background: #02A067;
+}
+/* ===========_______________________________ START COLOR: PART 8 - #02A067" ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 9 - #02A067-#008153 ________________________________________=========== */
+#jf-login .jf-login-greeting {
+	background-color: #02A067;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#02A067),to(#008153));
+	background-image: -webkit-linear-gradient(top,#02A067,#008153);
+	background-image: -moz-linear-gradient(top,#02A067,#008153);
+	background-image: -ms-linear-gradient(top,#02A067,#008153);
+	background-image: -o-linear-gradient(top,#02A067,#008153);
+	background-image: linear-gradient(top,#02A067,#008153);
+	border: 1px solid #008153;
+}
+/* ===========_______________________________ END COLOR: PART 9 - #02A067-#008153 ________________________________________=========== */
+
+
+--------------- JOMSOCIAL ---------------------------------------------------------------------------------------------------------
+
+
+
+/* ===========_______________________________ START COLOR: PART 1 - #02A067 ________________________________________=========== */
+#community-wrap .button, body #community-wrap a.active-state, #community-wrap .jf-user-apps .app-box-header,
+#community-wrap .cGroup-Events .event-date div, #community-wrap .community-events-results-left,
+#community-wrap.cEvents .cSlider .cSlider-nav-clip ul li .cEventDate, #community-wrap .community-calendar.cModule div.calendar-month,
+#community-wrap .community-calendar.cModule span.calendar-month {
+	background: #02A067;
+}
+#community-wrap .community-status .button, #cWindowAction .button {
+	background: #02A067 !important;
+}
+#community-wrap .cCategories .cCount, body #community-wrap .jf-alreadyfriends {
+	background-color: #02A067 !important;
+}
+#jsMenu .jsMenuBar a, #community-wrap.cGroups .cIndex #cFeatured .cGroupsMain .cGroupInfo .cFeaturedTitle a, 
+#community-wrap.cGroups .cIndex #cFeatured .cSlider ul li .cFeaturedTitle a,
+#community-wrap.cPhotos .cIndex #cFeatured .cFeaturedAlbums .cFeaturedTitle a, #community-wrap.cEvents #cFeatured #event-title,
+#jf-login .jf-login-loggedcont.s-jf-js-login-v .jf-login-loggedcont-loader table tr td .section2 .section2-prof a,
+#jf-login .jf-login-loggedcont.s-jf-js-login-v .jf-login-loggedcont-loader table tr td .section2 .section2-acc-pri a {
+	color: #02A067;
+}
+#community-wrap .cFeed-item .newsfeed-avatar a:hover, .cFeed-item .newsfeed-avatar a:hover,
+#community-wrap .js_PrivacyOpen .js_dropDownMaster .js_dropDown,
+#community-wrap.cEvents .cSlider .cSlider-nav-clip ul li, #community-wrap .cGroup-Events .event-date {
+	border-color: #02A067;
+}
+#community-wrap .community-status .creator a:hover {
+	color: #02A067 !important;
+}
+02A067
+/* ===========_______________________________ END COLOR: PART 1 - #02A067 ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 2 - #02A067 ________________________________________=========== */
+#community-wrap .button:hover, #community-wrap .latest-events .jsMM, #jsMenu .jsMenuBar li ul {
+	background: #02A067;
+}
+#community-wrap .community-status .button:hover, #community-wrap #community-event-option, #community-wrap #community-group-admin,
+#community-wrap .cTabsBar ul li.cTabCurrent a, #community-wrap .cTabsBar ul li a:hover, #community-wrap .cTabsBar ul li a:focus,
+#cWindowAction .button:hover {
+	background: #02A067 !important;
+}
+#jsMenu .jsMenuBar li ul a:focus,
+#jsMenu .jsMenuBar li:hover a,
+#jsMenu .jsMenuBar li a.active, 
+#jsMenu .jsMenuBar li ul a:hover,
+#like-container .meLike:hover, .qtip-title,
+#jsMenu .jsHome:hover, #jsMenu .jsIr.isActive, #jsMenu .jsMenuIcon div a:hover {
+	background-color: #02A067 !important;
+}
+#community-wrap a, #community-wrap .cSubmenu li a {
+	color: #02A067;
+}
+#community-wrap .latest-events .jsEvDate {
+	border-color: #02A067;
+}
+#community-wrap .cFeed-item .newsfeed-content a {
+	color: #02A067 !important;
+}
+#jsMenu .jsMenuBar li:hover ul li a:hover {
+	color: #02A067 !important;
+	background: #fff !important;
+}
+#community-wrap #community-group-admin h3, #community-wrap #community-event-option h3 {
+	border-color: #02A067 !important;
+}
+div.jf-js-flex-caption.jf-js-register:hover {
+	background: #02A067 !important;
+}
+#community-wrap .innerpgbar, .innerpgbar {
+	background: #02A067;
+	background: -moz-linear-gradient( center top, #02A067 5%, #02A067 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02A067', endColorstr='#02A067');
+	background-color: #02A067;
+}
+#community-wrap .jf-mob-side-toggl:hover {
+	background-color: #02A067 !important;
+}
+/* ===========_______________________________ END COLOR: PART 2 - #02A067 ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 3 - #222222 ________________________________________=========== */
+#community-wrap .latest-events .jsDD {
+	color: #222;
+}
+/* ===========_______________________________ END COLOR: PART 3 - #222 ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 4 - #222 ________________________________________=========== */
+#jsMenu .jsLogOff a:hover {
+	background-color: #EA0000 !important;
+}
+/* ===========_______________________________ END COLOR: PART 4 - #222 ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 5 - #333 ________________________________________=========== */
+#jf-js-login .jf-js-login-loggedcont .logout .button:hover {
+	background: #E70000;
+}
+/* ===========_______________________________ END COLOR: PART 5 - #333 ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 6 - #3A3A3A ________________________________________=========== */
+#community-wrap .jsFriendList:hover .jsFriendRespond input {
+	background: #cc0000;
+	border-color: #cc0000;
+}
+/* ===========_______________________________ END COLOR: PART 6 - #3A3A3A ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 7 - #8F0000 ________________________________________=========== */
+#community-wrap #community-event-option .event-menus li a, #community-wrap #community-group-admin .group-menus li a {
+	border-bottom: 1px dashed #00774C !important;
+	border-top: 1px dashed #00774C !important;
+}
+/* ===========_______________________________ END COLOR: PART 7 - #8F0000 ________________________________________=========== */
+
+
+
+/* ===========_______________________________ START COLOR: PART 8 - #E21818-#D80C0C ________________________________________=========== */
+#jf-js-login .jf-js-login-greeting {
+	background-color: #02A067;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#02A067),to(#008153));
+	background-image: -webkit-linear-gradient(top,#02A067,#008153);
+	background-image: -moz-linear-gradient(top,#02A067,#008153);
+	background-image: -ms-linear-gradient(top,#02A067,#008153);
+	background-image: -o-linear-gradient(top,#02A067,#008153);
+	background-image: linear-gradient(top,#02A067,#008153);
+	border: 1px solid #008153;
+}
+/* ===========_______________________________ END COLOR: PART 8 - #E21818-#D80C0C ________________________________________=========== */
+
+/* ===========_______________________________ START COLOR: PART 9 - #FFF-#FFF ________________________________________=========== */
+#jf-mobile-menu {
+	background-color: #02A067 !important;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#02A067),to(#004D31)) !important;
+	background-image: -webkit-linear-gradient(top,#02A067,#004D31) !important;
+	background-image: -moz-linear-gradient(top,#02A067,#004D31) !important;
+	background-image: -ms-linear-gradient(top,#02A067,#004D31) !important;
+	background-image: -o-linear-gradient(top,#02A067,#004D31) !important;
+	background-image: linear-gradient(top,#02A067,#004D31) !important;
+}
+/* ===========_______________________________ END COLOR: PART 10 - #EE0909-#B60202 ________________________________________=========== */

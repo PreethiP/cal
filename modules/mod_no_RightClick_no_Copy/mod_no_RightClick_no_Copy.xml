@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>No Right Click, No Copy</name> 
+	<author>www.contona.com</author> 
+	<creationDate>Oct, 2012</creationDate> 
+	<copyright>Copyright (C) 2012-13, www.contona.com | All rights reserved.</copyright> 
+	<license>GPL 2.0</license> 
+	<authorEmail>info@contona.com</authorEmail> 
+	<authorUrl>www.contona.com</authorUrl> 
+	<version>2.0.0</version> 
+	<description>It will disable Right Click and Text Selection. For more extensions, visit: www.demo.contona.com</description>
+	<files>
+		<filename module="mod_no_RightClick_no_Copy">mod_no_RightClick_no_Copy.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_no_RightClick_no_Copy.xml</filename>
+		<folder>fields</folder>	
+	</files>
+ 
+    <!-- Optional parameters -->
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_no_RightClick_no_Copy/fields">
+			<fieldset name="basic">
+					
+					<field name="" type="separatornote" default="" label="" description="Nothing to set at parameter. Just enable this module on a position. That's it." />				
+				
+			</fieldset>
+				
+		</fields>
+	</config>
+	<!-- Joomla! 1.5 uses params -->
+	<params>
+				
+					
+				
+			
+		</params>
+	
+</install>

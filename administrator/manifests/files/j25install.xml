@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="file" method="upgrade">
+  <name>Greek language pack for Virtuemart 2.x</name>
+  <author>Spyros Petrakis</author>
+  <authorEmail>info@yourgeek.gr</authorEmail>
+  <authorUrl>yourgeek.gr</authorUrl>
+  <creationDate>2012-11-04</creationDate>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>2.0.x</version>
+  <description>Greek language pack for Virtuemart 2.x</description>
+  <fileset>
+    <files folder="administrator" target="administrator/language/el-GR">
+    <file>el-GR.plg_vmpayment_payzen.sys.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_wlt.sys.ini</file>
+      <file>el-GR.plg_vmcustom_stockable.ini</file>
+      <file>el-GR.plg_vmcustom_specification.sys.ini</file>
+      <file>el-GR.plg_vmshipment_weight_countries.ini</file>
+      <file>el-GR.plg_vmpayment_authorizenet.sys.ini</file>
+      <file>el-GR.com_virtuemart.ini</file>
+      <file>el-GR.plg_vmshipment_weight_countries.sys.ini</file>
+      <file>el-GR.plg_vmpayment_klarna.sys.ini</file>
+      <file>el-GR.com_virtuemart_countries.ini</file>
+      <file>el-GR.plg_search_virtuemart.ini</file>
+      <file>el-GR.com_virtuemart.menu.ini</file>
+      <file>el-GR.plg_vmpayment_systempay.sys.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers.ini</file>
+      <file>el-GR.plg_vmpayment_paypal.ini</file>
+      <file>el-GR.plg_vmpayment_payzen.ini</file>
+      <file>el-GR.plg_vmcustom_textinput.ini</file>
+      <file>el-GR.com_virtuemart_media.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_pwy.sys.ini</file>
+      <file>el-GR.plg_vmpayment_standard.sys.ini</file>
+      <file>el-GR.plg_vmpayment_heidelpay.sys.ini</file>
+      <file>el-GR.com_virtuemart.sys.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_sft.sys.ini</file>
+      <file>el-GR.plg_vmpayment_paypal.sys.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_did.sys.ini</file>
+      <file>el-GR.plg_vmcustom_textinput.sys.ini</file>
+      <file>el-GR.plg_vmpayment_standard.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_acc.sys.ini</file>
+      <file>el-GR.plg_vmpayment_systempay.ini</file>
+      <file>el-GR.plg_vmcustom_stockable.sys.ini</file>
+      <file>el-GR.plg_vmpayment_klarna.ini</file>
+      <file>el-GR.plg_vmpayment_heidelpay.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_obt.sys.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_idl.sys.ini</file>
+      <file>el-GR.plg_vmpayment_authorizenet.ini</file>
+      <file>el-GR.plg_vmcustom_specification.ini</file>
+      <file>el-GR.plg_vmpayment_moneybookers_gir.sys.ini</file>
+    </files>
+    <files folder="site" target="language/el-GR">
+      <file>el-GR.mod_virtuemart_cart.sys.ini</file>
+      <file>el-GR.com_virtuemart.ini</file>
+      <file>el-GR.mod_virtuemart_product.ini</file>
+      <file>el-GR.mod_virtuemart_category.sys.ini</file>
+      <file>el-GR.mod_virtuemart_product.sys.ini</file>
+      <file>el-GR.mod_virtuemart_currencies.ini</file>
+      <file>el-GR.mod_virtuemart_category.ini</file>
+      <file>el-GR.com_virtuemart.sys.ini</file>
+      <file>el-GR.mod_virtuemart_currencies.sys.ini</file>
+      <file>el-GR.mod_virtuemart_search.ini</file>
+      <file>el-GR.mod_virtuemart_search.sys.ini</file>
+      <file>el-GR.com_virtuemart.sef.ini</file>
+      <file>el-GR.mod_virtuemart_manufacturer.ini</file>
+      <file>el-GR.mod_virtuemart_cart.ini</file>
+      <file>el-GR.mod_virtuemart_manufacturer.sys.ini</file>
+    </files>
+  </fileset>
+</extension>

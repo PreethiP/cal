@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - JF Library</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2011-2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+    <version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (Joomla Plugin) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF Library</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>JoomForest JavaScript Library, Exclusively By JoomForest TEAM, Only For "JF Social" Joomla 2.5 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><div class="title">Plugin Features:</div><ul><li>Load jQuery library;</li><li>Ability to remove other jQuery libraries;</li><li> Ability to remove mootools;</li><li>Ability to remove unwanted scripts;</li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+    <files>
+        <filename plugin="jflibrary">jflibrary.php</filename>
+        <filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>js</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_jflibrary.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_jflibrary.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="jflib_jquery" group="jflib_jquery" label="jQuery Library">
+				<field name="jflib_jquery_v" type="list" default="1.7.2" label="jQuery Version" description="Choose jQuery Library version.">
+					<option value="latest">Latest version (Google)</option>
+					<option value="1.8.2">v1.8.2</option>
+					<option value="1.8.0">v1.8.0</option>
+					<option value="1.7.2">v1.7.2 (Recomended)</option>
+					<option value="disable">Disable</option>
+				</field>
+				<field name="jflib_source" type="list" default="google" label="jQuery Source" description="Choose from where to load jQuery, from your local server or from Google CDN (Recomended to load from Google CDN).">
+					<option value="google">Google</option>
+					<option value="local">Local</option>
+				</field>
+				<field name="jflib_protocol" type="radio" default="http" label="Protocol" description="Choose which protocol to use">
+	                <option value="http">http</option>
+	                <option value="https">https</option>
+	            </field>
+				<field name="jflib_noConflict" type="list" default="0" label="jQuery No-Conflict" description="Choose enable or disable jQuery 'noConflict' Mode (Recomended if you enable it).">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+            </fieldset>
+			
+			<fieldset name="jflib_jquery_remove" group="jflib_jquery_remove" label="Remove Other jQuery Libraries">
+				<field name="jflib_jquery_uniq" type="list" default="1" label="Remove Other jQuery" description="Choose to remove or not other jQuery libraries.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jflib_jquery_regex" type="field" cols="70" rows="1" default="([\/a-zA-Z0-9_:\.-]*)jquery([0-9\.-]|min|pack)*?.js" label="jQuery Regex" description="Regular expression to find and remove other jQuery libraries." />
+			</fieldset>
+            
+			<fieldset name="jflib_custom" group="jflib_custom" label="Remove Other Scripts">
+				<field name="jflib_custom_remove" type="list" default="0" label="Remove Other Scripts" description="Enable/Disable other script libraries removing mode">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jflib_custom_scripts" type="textarea" cols="30" rows="5" default="" label="Type Scripts Names" description="Type scripts names and separate them with commas (f.e. - scriptname1.js,scriptname2.js,scriptname3.js)" />
+            </fieldset>
+            
+			<fieldset name="jflib_mootools" group="jflib_mootools" label="Remove Mootools">
+				<field name="jflib_removeMoo" type="list" default="0" label="Remove Mootools Core" description="Choose remove or dont remove Mootools Core (It will also remove the 'caption.js' file).">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jflib_removeMooMore" type="list" default="0" label="Remove Mootools More" description="Choose remove or dont remove Mootools More (It will also remove the 'caption.js' file).">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+            </fieldset>
+
+			<fieldset addfieldpath="/plugins/system/jflibrary/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="plugins/system/jflibrary/admin/" />
+				<field type="about" name="about" path="plugins/system/jflibrary/admin/images" />
+			</fieldset>
+			
+        </fields>
+    </config>
+</extension>

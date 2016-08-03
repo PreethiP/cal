@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>JF JS LatestMembers</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2011-2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (JomSocial Module) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF JS LatestMembers</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>JomSocial Latest Members, Exclusively By JoomForest TEAM, Only For "JF Social" JomSocial 2.6 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><div class="title">Module Features:</div><ul><li> Show latest Members of JomSocial; </li><li> Show fixed number of users; </li><li> Beautiful Tooltips; </li><li> Auto Slider with its parametres; </li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfjslatestmembers.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_jfjslatestmembers">mod_jfjslatestmembers.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>admin</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="jfmodclass_sfx" type="text" default="" label="Module Class Suffix" description="Type Module Class Suffix" />
+				<field name="jfupdatedavatars" type="list" default="0" label="Updated avatar only" description="Show users with updated avatar only.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jfusertooltips" type="list" default="1" label="Use Tooltips" description="Select to choose whether to show the tooltips or not.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jfusercount_lim" type="text" default="10" label="User Count" description="The number of users to display (default is 10)" />		
+				<field name="loadjquery" type="list" default="0" label="Load jQuery" description="Load 'jQuery' if you dont have on your website (NOTE! if you use our 'JF Social' Template, than you dont need to enable this)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="loadjquery_noconflict" type="list" default="0" label="Load jQuery noConflict" description="Load 'jQuery noConflict' mode if you dont have on your website (NOTE! if you use our 'JF Social' Template, than you dont need to enable this)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="loadjquery_easing" type="list" default="0" label="Load jQuery Easing" description="Load 'jQuery Easing' feature if you dont have on your website (NOTE! if you use our 'JF Social' Template, than you dont need to enable this)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jfautoslide" type="list" default="0" label="Auto Slide Users" description="Select 'Yes' to auto slide users">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jfautoslidedur" type="text" default="3000" label="Auto Slide Duration" description="Type Auto Slide Duration, Default is 3 seconds (1 second = 1000)" />
+				<field name="jfslideuserscount" type="text" default="5" label="Count on 1-st Slide" description="Type the number of members which will be shown on first slide, Default is 5" />
+			</fieldset>
+			<fieldset addfieldpath="/modules/mod_jfjslatestmembers/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="modules/mod_jfjslatestmembers/admin/" />
+				<field type="about" name="about" path="modules/mod_jfjslatestmembers/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

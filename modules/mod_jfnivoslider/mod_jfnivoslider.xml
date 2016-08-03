@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>JF NivoSlider</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (Joomla Module) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF NivoSlider</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>Joomla NivoSlider v3.1, Only For "JF Social" Joomla 2.5 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><ul><li> This Module is base on "Dev7studios" NivoSlider - <a href="http://nivo.dev7studios.com/" target="_blank">http://nivo.dev7studios.com/</a></li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+	<files>
+		<filename module="mod_jfnivoslider">mod_jfnivoslider.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfnivoslider.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="jfNivoEffect" type="list" default="random" label="Effects" description="Choose Slide Effect (Default is - 'random').">
+					<option value="random">random</option>
+					<option value="sliceDown">sliceDown</option>
+					<option value="sliceDownLeft">sliceDownLeft</option>
+					<option value="sliceUp">sliceUp</option>
+					<option value="sliceUpLeft">sliceUpLeft</option>
+					<option value="sliceUpDown">sliceUpDown</option>
+					<option value="sliceUpDownLeft">sliceUpDownLeft</option>
+					<option value="fold">fold</option>
+					<option value="fade">fade</option>
+					<option value="slideInRight">slideInRight</option>
+					<option value="slideInLeft">slideInLeft</option>
+					<option value="boxRandom">boxRandom</option>
+					<option value="boxRain">boxRain</option>
+					<option value="boxRainReverse">boxRainReverse</option>
+					<option value="boxRainGrow">boxRainGrow</option>
+					<option value="boxRainGrowReverse">boxRainGrowReverse</option>
+				</field>
+				<field name="jfNivoSlices" type="text" default="15" label="Slice Animations" description="Type Slice Animation Count (default is = '15')." />
+				<field name="jfNivoBoxCols" type="text" default="8" label="Box Cols Animations" description="Type Box Cols Animation Count (default is = '8')." />
+				<field name="jfNivoBoxRows" type="text" default="4" label="Box Rows Animations" description="Type Box Rows Animation Count (default is = '4')." />
+				<field name="jfNivoAnimSpeed" type="text" default="500" label="Animation Speed" description="Type Animation Speed (default is = '500')." />
+				<field name="jfNivoPauseTime" type="text" default="3000" label="Pause Time" description="Type Pause Interval (default is '3000' = 3 seconds)." />
+				<field name="jfNivoDirectionNav" type="list" default="true" label="Direct Navigation" description="Choose Enable or to Disable Direct Navigation.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfNivoControlNav" type="list" default="true" label="Control Navigation" description="Choose Enable or to Disable Control Navigation.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfNivoPauseOnHover" type="list" default="true" label="Pause On Hover" description="Choose Enable or to Disable Pause On Hover.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfNivoRandomStart" type="list" default="false" label="Randomize Slide Order" description="Choose Enable or to Disable Randomize Slide Order, on load.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfnivo_jquery_library" label="jQuery Library">
+				<field name="jfNivo_loadjquery" type="list" default="0" label="jQuery" description="If you dont use jQuery library on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jfNivo_loadjquery_noconflict" type="list" default="0" label="jQuery noConflict Mode" description="If you dont use jQuery 'noConflict' mode on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfnivoslides" label="Slides">
+				
+					<field name="jfnivo_slide_1" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #1" description="Choose Image."/>
+					<field name="jfnivo_slide_1_title" type="text" default="" size="20" label="Slide #1 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_1_link" type="text" default="" size="20" label="Slide #1 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_1_link_target" type="list" default="_self" label="Slide #1 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+					
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_2" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #2" description="Choose Image."/>
+					<field name="jfnivo_slide_2_title" type="text" default="" size="20" label="Slide #2 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_2_link" type="text" default="" size="20" label="Slide #2 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_2_link_target" type="list" default="_self" label="Slide #2 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_3" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #3" description="Choose Image."/>
+					<field name="jfnivo_slide_3_title" type="text" default="" size="20" label="Slide #3 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_3_link" type="text" default="" size="20" label="Slide #3 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_3_link_target" type="list" default="_self" label="Slide #3 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_4" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #4" description="Choose Image."/>
+					<field name="jfnivo_slide_4_title" type="text" default="" size="20" label="Slide #4 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_4_link" type="text" default="" size="20" label="Slide #4 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_4_link_target" type="list" default="_self" label="Slide #4 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_5" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #5" description="Choose Image."/>
+					<field name="jfnivo_slide_5_title" type="text" default="" size="20" label="Slide #5 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_5_link" type="text" default="" size="20" label="Slide #5 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_5_link_target" type="list" default="_self" label="Slide #5 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_6" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #6" description="Choose Image."/>
+					<field name="jfnivo_slide_6_title" type="text" default="" size="20" label="Slide #6 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_6_link" type="text" default="" size="20" label="Slide #6 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_6_link_target" type="list" default="_self" label="Slide #6 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_7" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #7" description="Choose Image."/>
+					<field name="jfnivo_slide_7_title" type="text" default="" size="20" label="Slide #7 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_7_link" type="text" default="" size="20" label="Slide #7 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_7_link_target" type="list" default="_self" label="Slide #7 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_8" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #8" description="Choose Image."/>
+					<field name="jfnivo_slide_8_title" type="text" default="" size="20" label="Slide #8 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_8_link" type="text" default="" size="20" label="Slide #8 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_8_link_target" type="list" default="_self" label="Slide #8 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_9" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #9" description="Choose Image."/>
+					<field name="jfnivo_slide_9_title" type="text" default="" size="20" label="Slide #9 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_9_link" type="text" default="" size="20" label="Slide #9 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_9_link_target" type="list" default="_self" label="Slide #9 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+					<field name="jfnivo_slide_10" type="media" size="10" directory="jf/slideshows/nivoslider" label="Slide #10" description="Choose Image."/>
+					<field name="jfnivo_slide_10_title" type="text" default="" size="20" label="Slide #10 / Title" description="Type Tittle Text (Leave it empty if you dont want to show this title)."/>
+					<field name="jfnivo_slide_10_link" type="text" default="" size="20" label="Slide #10 /Link" description="Type Link (for example: https://www.google.com/). (Leave empty if you dont want to use link)"/>
+					<field name="jfnivo_slide_10_link_target" type="list" default="_self" label="Slide #10 / Link Target" description="Choose Link Target">
+						<option value="_self">Self</option>
+						<option value="_blank">Blank</option>
+					</field>
+				
+				<field type="spacer" hr="true" />
+				
+				
+			</fieldset>
+			
+			<fieldset name="advanced">
+			
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset addfieldpath="/modules/mod_jfnivoslider/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="modules/mod_jfnivoslider/admin/" />
+				<field type="about" name="about" path="modules/mod_jfnivoslider/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

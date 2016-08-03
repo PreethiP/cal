@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>JF CameraSlider</name>
+	<author>JoomForest.com</author>
+	<creationDate>08.02.13</creationDate>
+	<copyright>Copyright (C) 2012 JoomForest. All rights reserved.</copyright>
+	<authorEmail>support@joomforest.com</authorEmail>
+	<authorUrl>http://www.joomforest.com/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[<div id="jf-module-description"><table class="jf-module-description-title jf-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td>JoomForest - JF Social (Joomla Module) <span class="info"></span></td></tr></table><div class="jftoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td>JF CameraSlider</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">1.2</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>08.02.13</td></tr><tr><td class="ident" width="100px">Description:</td><td>Pixedelic CameraSlider v1.3.4, Only For "JF Social" Joomla 2.5 Template</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomforest.com/" target="_blank">http://www.joomforest.com/</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.joomforest.com/support.html" target="_blank">http://www.joomforest.com/support.html</a> - Support you can get only on our forum.</td></tr><tr><td class="ident" width="100px">Follow US:</td><td><a class="social-f jf-module-tip-n" href="https://www.facebook.com/JoomForest" target="_blank" title="find us on facebook"></a><a class="social-t jf-module-tip-n" href="http://twitter.com/JoomForest" target="_blank" title="follow us on twitter"></a><a class="social-g jf-module-tip-n" href="https://plus.google.com/103291323205603379401/" target="_blank" title="find us on Google+"></a></td></tr></table><div style="clear:both"></div><div class="features"><div class="content"><ul><li> This Module is base on "Pixedelic" Camera Slider - <a href="http://www.pixedelic.com/plugins/camera/" target="_blank">http://www.pixedelic.com/plugins/camera/</a></li></ul></div></div><div class="jf-module-copyright"> Copyright (C) 2012 JoomForest.com </div></div></div>]]></description>
+	<files>
+		<filename module="mod_jfcameraslider">mod_jfcameraslider.php</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfcameraslider.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="jfCameraHeight" type="text" default="41%" label="Camera Height" description="Type Camera Height (default is - '41%')." />
+				<field name="jfCameraFx" type="list" default="random" label="Effects" description="Choose Slide Effect (Default is - 'random').">
+					<option value="random">random</option>
+					<option value="simpleFade">simpleFade</option>
+					<option value="curtainTopLeft">curtainTopLeft</option>
+					<option value="curtainTopRight">curtainTopRight</option>
+					<option value="curtainBottomLeft">curtainBottomLeft</option>
+					<option value="curtainBottomRight">curtainBottomRight</option>
+					<option value="curtainSliceLeft">curtainSliceLeft</option>
+					<option value="curtainSliceRight">curtainSliceRight</option>
+					<option value="blindCurtainTopLeft">blindCurtainTopLeft</option>
+					<option value="blindCurtainTopRight">blindCurtainTopRight</option>
+					<option value="blindCurtainBottomLeft">blindCurtainBottomLeft</option>
+					<option value="blindCurtainBottomRight">blindCurtainBottomRight</option>
+					<option value="blindCurtainSliceBottom">blindCurtainSliceBottom</option>
+					<option value="blindCurtainSliceTop">blindCurtainSliceTop</option>
+					<option value="stampede">stampede</option>
+					<option value="mosaic">mosaic</option>
+					<option value="mosaicReverse">mosaicReverse</option>
+					<option value="mosaicRandom">mosaicRandom</option>
+					<option value="mosaicSpiral">mosaicSpiral</option>
+					<option value="mosaicSpiralReverse">mosaicSpiralReverse</option>
+					<option value="topLeftBottomRight">topLeftBottomRight</option>
+					<option value="bottomRightTopLeft">bottomRightTopLeft</option>
+					<option value="bottomLeftTopRight">bottomLeftTopRight</option>
+					<option value="scrollLeft">scrollLeft</option>
+					<option value="scrollRight">scrollRight</option>
+					<option value="scrollHorz">scrollHorz</option>
+					<option value="scrollBottom">scrollBottom</option>
+					<option value="scrollTop">scrollTop</option>
+				</field>
+				<field name="jfCameraAnimSpeed" type="text" default="1500" label="Animation Speed" description="Type Animation Speed (default is '1500' = 1.5 seconds)." />
+				<field name="jfCameraPauseTime" type="text" default="3000" label="Pause Time" description="Type Pause Interval (default is '3000' = 3 seconds)." />
+				<field name="jfCameraBoxCols" type="text" default="6" label="Box Cols Animations" description="Type Box Cols Animation Count (default is = '6')." />
+				<field name="jfCameraBoxRows" type="text" default="4" label="Box Rows Animations" description="Type Box Rows Animation Count (default is = '4')." />
+				<field name="jfCameraEasing" type="list" default="easeInOutExpo" label="Easing" description="Choose Slide Easing (Default is - 'easeInOutExpo').">
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="linear">linear</option>
+					<option value="swing">swing</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				<field name="jfCameraLoader" type="list" default="pie" label="Loader Type" description="Choose Loader Type">
+					<option value="pie">pie</option>
+					<option value="bar">bar</option>
+					<option value="none">none</option>
+				</field>
+				<field name="jfCameraLoaderColor" type="text" class="jf_colorpicker" default="#eeeeee" label="Loader Color" description="Choouse Loader Color Style (default is black = #eeeeee)" />
+				<field name="jfCameraLoaderBGColor" type="text" class="jf_colorpicker" default="#222222" label="Loader Background Color" description="Choouse Loader Background Color Style (default is black = #222222)" />
+				<field name="jfCameraPieDiameter" type="text" default="38" label="Pie Diameter" description="Type Pie Diameter (default is = '38')." />
+				<field name="jfCameraPiePosition" type="list" default="rightTop" label="Pie Position" description="Choose Pie Position (default is = 'rightTop').">
+					<option value="rightTop">rightTop</option>
+					<option value="leftTop">leftTop</option>
+					<option value="leftBottom">leftBottom</option>
+					<option value="rightBottom">rightBottom</option>
+				</field>
+				<field name="jfCameraLoaderOpacity" type="list" default="0.8" label="Loader Opacity" description="Choose Loader Opacity (default is = '80%').">
+					<option value="0">0%</option>
+					<option value="0.1">10%</option>
+					<option value="0.2">20%</option>
+					<option value="0.3">30%</option>
+					<option value="0.4">40%</option>
+					<option value="0.5">50%</option>
+					<option value="0.6">60%</option>
+					<option value="0.7">70%</option>
+					<option value="0.8">80%</option>
+					<option value="0.9">90%</option>
+					<option value="1">100%</option>
+				</field>
+				<field name="jfCameraLoaderPadding" type="text" default="2" label="Loader Padding" description="Type Loader Padding (default is = '2')." />
+				<field name="jfCameraLoaderStroke" type="text" default="7" label="Loader Stroke" description="Type the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter (default is = '7')." />
+				<field name="jfCameraPauseOnHover" type="list" default="true" label="Pause On Hover" description="Choose Enable or to Disable Pause On Hover.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraPlayPause" type="list" default="true" label="Play / Pause" description="Choose Enable or to Disable Play / Pause Buttons.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraPauseOnClick" type="list" default="false" label="Pause On Click" description="Choose Enable or to Disable Pause On Click.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraNav" type="list" default="true" label="Direct Navigation" description="Choose Enable or to Disable Direct Navigation.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraNavH" type="list" default="true" label="Navigation Hover" description="if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraMobileNavH" type="list" default="true" label="Mobile Navigation Hover" description="For Mobile Devices - if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraPag" type="list" default="true" label="Pagination" description="Choose Enable or to Disable Pagination.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="jfCameraThumbs" type="list" default="true" label="Thumbnails" description="Choose Enable or to Disable Thumbnails.">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfcamera_jquery_library" label="jQuery Library">
+				<field name="jfCamera_loadjquery" type="list" default="0" label="jQuery" description="If you dont use jQuery library on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="jfCamera_loadjquery_noconflict" type="list" default="0" label="jQuery noConflict Mode" description="If you dont use jQuery 'noConflict' mode on your website, than enable it. (NOTE! if you use our 'JF Social' joomla template, you don't need to enable it.)">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="jfcameraslides" label="Slides">
+				
+					<field name="jfcamera_slide_1" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #1 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_1_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #1 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_1_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_1_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_1_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_1_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_1_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_1_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_1_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_1_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_1_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_1_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_2" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #2 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_2_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #2 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_2_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_2_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_2_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_2_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_2_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_2_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_2_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_2_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_2_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_2_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_3" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #3 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_3_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #3 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_3_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_3_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_3_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_3_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_3_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_3_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_3_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_3_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_3_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_3_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_4" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #4 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_4_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #4 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_4_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_4_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_4_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_4_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_4_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_4_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_4_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_4_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_4_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_4_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_5" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #5 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_5_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #5 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_5_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_5_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_5_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_5_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_5_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_5_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_5_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_5_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_5_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_5_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_6" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #6 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_6_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #6 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_6_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_6_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_6_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_6_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_6_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_6_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_6_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_6_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_6_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_6_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_7" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #7 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_7_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #7 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_7_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_7_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_7_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_7_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_7_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_7_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_7_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_7_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_7_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_7_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_8" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #8 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_8_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #8 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_8_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_8_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_8_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_8_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_8_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_8_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_8_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_8_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_8_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_8_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_9" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #9 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_9_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #9 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_9_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_9_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_9_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_9_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_9_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_9_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_9_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_9_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_9_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_9_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+					<field name="jfcamera_slide_10" type="media" size="10" directory="jf/slideshows/cameraslider" label="Slide #10 / Image" description="Choose Image."/>
+					<field name="jfcamera_slide_10_thumb" type="media" size="10" directory="jf/slideshows/cameraslider/thumbs" label="Slide #10 / Thumb" description="Choose Thumb Image."/>
+					<field name="jfcamera_slide_10_caption_title" type="text" default="" label="Caption Title" description="Type Caption Title (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_10_caption_descr" type="text" default="" label="Caption Description" description="Type Caption Description (Leave it empty if you dont want to have caption)"/>
+					<field name="jfcamera_slide_10_caption_btn_text" type="text" default="" label="Caption Button Text" description="Type Caption Button Text (Leave it empty if you dont want to have a button)"/>
+					<field name="jfcamera_slide_10_caption_btn_link" type="text" default="" label="Caption Button Link" description="Type Caption Button Link (Leave it empty if you dont want to have link)"/>
+					<field name="jfcamera_slide_10_caption_btn_target" type="list" default="_blank" label="Caption Button Target" description="Choose Caption Button Target (default is '_blank')">
+						<option value="_blank">_blank</option>
+						<option value="_self">_self</option>
+					</field>
+					<field name="jfcamera_slide_10_caption_effect" type="list" default="fadeFromLeft" label="Caption Effect" description="Choose Caption Effect">
+						<option value="fadeFromLeft">fadeFromLeft</option>
+						<option value="fadeIn">fadeIn</option>
+						<option value="fadeFromRight">fadeFromRight</option>
+						<option value="fadeFromTop">fadeFromTop</option>
+						<option value="fadeFromBottom">fadeFromBottom</option>
+						<option value="moveFromLeft">moveFromLeft</option>
+						<option value="moveFomRight">moveFomRight</option>
+						<option value="moveFromTop">moveFromTop</option>
+						<option value="moveFromBottom">moveFromBottom</option>
+					</field>
+					<field name="jfcamera_slide_10_caption_posT" type="text" default="auto" label="Caption Top Position" description="Type Caption Distance From Top (default is 'auto')"/>
+					<field name="jfcamera_slide_10_caption_posL" type="text" default="30px" label="Caption Left Position" description="Type Caption Distance From Left (default is '30px')"/>
+					<field name="jfcamera_slide_10_caption_posB" type="text" default="30px" label="Caption Bottom Position" description="Type Caption Distance From Bottom (default is '30px')"/>
+					<field name="jfcamera_slide_10_caption_posR" type="text" default="auto" label="Caption Right Position" description="Type Caption Distance From Right (default is 'auto')"/>
+					
+				<field type="spacer" hr="true" />
+				
+			</fieldset>
+			
+			<fieldset name="advanced">
+			
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset addfieldpath="/modules/mod_jfcameraslider/admin/formfield" name="about" label="ABOUT US">
+				<field type="asset" name="asset" path="modules/mod_jfcameraslider/admin/" />
+				<field type="about" name="about" path="modules/mod_jfcameraslider/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
